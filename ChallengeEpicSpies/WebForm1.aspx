@@ -28,11 +28,17 @@
         <br />
         <br />
         <asp:Label ID="Label4" runat="server" Text="End Date of Previous Assignment"></asp:Label>
-        <asp:Calendar ID="endDatePreviousCalendar" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
+        <asp:Calendar ID="endDatePreviousCalendar" runat="server"></asp:Calendar>
         <br />
-        <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
         <br />
-        <asp:Calendar ID="Calendar3" runat="server"></asp:Calendar>
+        <asp:Label ID="Label5" runat="server" Text="Start Date of New Assignment"></asp:Label>
+        <br />
+        <asp:Calendar ID="startDateNewCalendar" runat="server"></asp:Calendar>
+        <br />
+        <br />
+        <asp:Label ID="Label6" runat="server" Text="Projected End Date of New Assignment"></asp:Label>
+        <br />
+        <asp:Calendar ID="endDateNewCalendar" runat="server"></asp:Calendar>
         <br />
         <asp:Button ID="assignSpyButton" runat="server" Text="Assign Spy" />
         <br />
