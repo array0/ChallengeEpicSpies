@@ -11,6 +11,7 @@ namespace ChallengeEpicSpies
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //BR 1
             DateTime today = System.DateTime.Today;
 
             endDatePreviousCalendar.SelectedDate = today;
@@ -18,6 +19,7 @@ namespace ChallengeEpicSpies
             startDateNewCalendar.SelectedDate = today.AddDays(14);
 
             endDateNewCalendar.SelectedDate = today.AddDays(21);
+            //BR 1 end
         }
 
         protected void assignSpyButton_Click(object sender, EventArgs e)
@@ -34,6 +36,15 @@ namespace ChallengeEpicSpies
                 spy,
                 spyAssignment,
                 spyBudget);
+
+            // BR 2 -- error is in place
+            // compare dates (TimeSpan)
+            int br2 = 20;
+
+            if (br2 < 14) {
+                results = string.Format("Error: Must allow two weeks between previous assignment and new assignment");
+            }
+            // BR 2 end
 
             answerLabel.Text = results;
         }
